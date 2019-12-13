@@ -49,7 +49,7 @@ const schema = {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.GPS,
     height: '100%'
   },
   grid: {
