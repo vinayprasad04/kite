@@ -77,7 +77,7 @@ StatusBullet.propTypes = {
 
 StatusBullet.defaultProps = {
   size: 'md',
-  color: 'default'
+  color: 'GPS'
 };
 
 export default StatusBullet;
