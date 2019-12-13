@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Redirect } from 'react-router-dom';
 
 import { RouteWithLayout } from './components';
-import { Main as MainLayout, Minimal as MinimalLayout, Kite as KiteLayout } from './layouts';
+import { Main as MainLayout, Minimal as MinimalLayout, Kite as KiteLayout, GPSLayout as GPS } from './layouts';
 
 import {
   Dashboard as DashboardView,
@@ -15,7 +15,8 @@ import {
   SignUp as SignUpView,
   SignIn as SignInView,
   NotFound as NotFoundView,
-  KiteDashboard as kiteDashboardView
+  KiteDashboard as kiteDashboardView,
+  GPSDashboard as GPSView
 } from './views';
 
 const Routes = () => {
@@ -93,6 +94,13 @@ const Routes = () => {
         exact
         layout={KiteLayout}
         path="/kite-dashboard"
+      />
+
+      <RouteWithLayout
+        component={GPSView}
+        exact
+        layout={GPS}
+        path="/gps"
       />
 
 
